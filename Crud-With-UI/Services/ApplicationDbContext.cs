@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Crud_With_UI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Crud_With_UI.Services
 {
@@ -8,5 +9,7 @@ namespace Crud_With_UI.Services
         {
 
         }
+
+        public DbSet<Product> Products { get; set; }
     }
 }
